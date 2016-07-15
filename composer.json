@@ -1,0 +1,22 @@
+{
+    "name": "sunnday/fileext",
+    "description": "composer libraries package",
+    "type": "library",
+    "require": {
+        "php": ">=5.4",
+        "pfinal/wechat": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sunnyday",
+            "email": "ityangbaojin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Sunnyday\\Fileext\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+/test
+.DS_Store
+/vendor
+/.idea
+/composer.lock
