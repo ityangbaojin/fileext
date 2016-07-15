@@ -3,8 +3,7 @@
     "description": "composer libraries package",
     "type": "library",
     "require": {
-        "php": ">=5.4",
-        "pfinal/wechat": "^1.2"
+        "php": ">=5.4"
     },
     "license": "MIT",
     "authors": [
