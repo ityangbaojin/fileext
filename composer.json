@@ -1,15 +1,17 @@
 {
     "name": "sunnday/fileext",
     "description": "composer libraries package",
-    "type": "library",
     "license": "MIT",
+    "minimum-stability" : "dev",
     "authors": [
         {
             "name": "sunnyday",
             "email": "ityangbaojin@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-4": {
             "Sunnyday\\Fileext\\": "src/"
