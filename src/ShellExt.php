@@ -2,16 +2,9 @@
 
 namespace Sunnyday\Fileext;
 
-class GetFileExt {
-    // 获取文件真实扩展
+// shell 获取文件扩展
+class ShellExt implements ExtInterface {
     public static function getExt($file) {
-        if (extension_loaded('fileinfo')) {
-            $encoding = false;
-            $fiObj = new \finfo($encoding ? FILEINFO_MIME : FILEINFO_MIME_TYPE);
-            $mimeType = $fiObj->file($file);
-            return $mimeType;
-        }
-        // 没fileinfon 扩展就用其它方式处理
         $command = 'file -I "' . realpath($file) . '"';
         $shellOutput = trim(shell_exec($command));
         $colonPosition = strpos($shellOutput, ':');
