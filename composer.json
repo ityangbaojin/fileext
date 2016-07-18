@@ -3,6 +3,7 @@
     "description": "composer libraries package",
     "license": "MIT",
     "minimum-stability" : "dev",
+    "version": "1.0",
     "authors": [
         {
             "name": "sunnyday",
