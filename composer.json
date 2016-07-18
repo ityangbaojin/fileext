@@ -2,7 +2,7 @@
     "name": "sunnday/fileext",
     "description": "composer libraries package",
     "license": "MIT",
-    "version": "1.0",
+    "type": "1.0",
     "authors": [
         {
             "name": "sunnyday",
