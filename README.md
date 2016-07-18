@@ -2,5 +2,5 @@
 composer libraries package
 
 ```
-sudo composer require sunnday/fileext dev-master
+composer require sunnday/fileext dev-master
 ```
