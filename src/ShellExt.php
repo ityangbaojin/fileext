@@ -2,8 +2,16 @@
 
 namespace Sunnyday\Fileext;
 
-// shell 获取文件扩展
+/**
+ * Class ShellExt
+ * @package Sunnyday\Fileext
+ */
 class ShellExt implements ExtInterface {
+    /**
+     * shell 获取文件扩展(仅用linux mac)
+     * @param $file
+     * @return string
+     */
     public static function getExt($file) {
         $command = 'file -I "' . realpath($file) . '"';
         $shellOutput = trim(shell_exec($command));

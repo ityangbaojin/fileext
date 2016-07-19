@@ -2,9 +2,17 @@
 
 namespace Sunnyday\Fileext;
 
-// fileinfo扩展 获取文件扩展
+/**
+ * Class FInfoExt
+ * @package Sunnyday\Fileext
+ */
 class FInfoExt implements ExtInterface {
-    // 获取文件真实扩展
+    /**
+     * fileinfo扩展 获取文件扩展
+     * @param $file
+     * @param bool|false $encoding
+     * @return bool|string
+     */
     public static function getExt($file, $encoding = false) {
         if (extension_loaded('fileinfo')) {
             $fiObj = new \finfo($encoding ? FILEINFO_MIME : FILEINFO_MIME_TYPE);

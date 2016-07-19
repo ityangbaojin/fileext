@@ -3,7 +3,7 @@
     "description": "composer libraries package",
     "license": "MIT",
     "minimum-stability" : "dev",
-    "version": "v1.0",
+    "version": "v2.0",
     "support": {
         "source": "https://github.com/ityangbaojin/fileext"
     },
